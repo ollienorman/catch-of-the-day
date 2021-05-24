@@ -1,0 +1,1 @@
+A simple React storefront app made while consolidating my React knowledge with courses from Wes Bos.
