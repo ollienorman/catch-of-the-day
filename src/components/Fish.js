@@ -6,10 +6,6 @@ class Fish extends React.Component {
     this.props.addToOrder(this.props.index);
   };
 
-  removeFromOrder = () => {
-    this.props.removeFromOrder(this.props.index);
-  };
-
   render() {
     const { image, name, price, desc, status } = this.props.details;
     const isAvailable = status === 'available';
@@ -23,13 +19,6 @@ class Fish extends React.Component {
         <p>{desc}</p>
         <button type="button" disabled={!isAvailable} onClick={this.addOrder}>
           {isAvailable ? 'Add To Order' : 'Sold Out!'}
-        </button>
-        <button
-          type="button"
-          disabled={!isAvailable}
-          onClick={this.removeFromOrder}
-        >
-          Remove From Order
         </button>
       </li>
     );
