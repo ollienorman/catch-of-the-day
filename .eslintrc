@@ -3,6 +3,7 @@
     "wesbos"
   ],
   "rules": {
-    "react/destructuring-assignment": "off"
+    "react/destructuring-assignment": "off",
+    "react/static-property-placement": "off"
   }
 }
